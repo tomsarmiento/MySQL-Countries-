@@ -4,7 +4,7 @@
 	FROM countries
 	LEFT JOIN languages ON countries.id = languages.country_id
 	WHERE language LIKE 'Slovene'
-	GROUP BY percentage DESC
+	ORDER BY percentage DESC
 
 2. ¿Qué consulta ejecutarías para mostrar el número total de ciudades para cada país? Su consulta debe devolver el nombre del país y el número total de ciudades. Tu consulta debe organizar el resultado por el número de ciudades en orden descendente. (3)
 
